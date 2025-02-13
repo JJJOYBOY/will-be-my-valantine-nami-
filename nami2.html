@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nami 2 Sayfası</title>
+    <link rel="stylesheet" href="nami2.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Diego.png" alt="Diego Resmi" class="diego-image" id="diego-image"> 
+        <img src="nami.png" alt="Sen Resmi" class="centered-image"> 
+        <p class="centered-text">EVET DİYECEĞİNİ BİLİYORDUM<br>
+            ARTIK EVLİYİZ
+        </p>
+        <h6>JOYBOY tarafından yapıldı, sana çok aşığım</h6>
+        <!-- Sağ üst köşeye sunger.png ekleniyor -->
+        <img src="sunger.png" alt="Sunger Resmi" class="sunger-image">
+    </div>
+
+    <!-- Müzik dosyasını ekleyin -->
+    <audio id="background-music" src="sunger.mp3"></audio>
+
+    <script src="script.js"></script>
+    <script>
+        // Diego resmine tıklandığında müziği çal
+        document.getElementById('diego-image').addEventListener('click', function() {
+            var music = document.getElementById('background-music');
+            music.play();
+        });
+    </script>
+</body>
+</html>
